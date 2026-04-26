@@ -204,7 +204,7 @@ install_pteroq() {
 
 enable_services() {
   case "$OS" in
-  ubuntu | debian)
+  ubuntu | linuxmint)
     systemctl enable redis-server
     systemctl start redis-server
     ;;
